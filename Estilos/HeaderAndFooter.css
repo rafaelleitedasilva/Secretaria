@@ -63,7 +63,9 @@ h6,
 .btn.btn-secondary {
     color: #FFFFFF;
 }
-
+.btn.btn-primary:hover{
+    color: #777777 !important;
+}
 .btn-square {
     width: 38px;
     height: 38px;
