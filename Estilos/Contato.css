@@ -20,6 +20,11 @@ textarea#exampleInputText{
     width: 100%;
     overflow-y: scroll;
     height: 250px;
+    padding: 10px;
+}
+
+textarea::placeholder{
+    color: rgb(189, 189, 189);
 }
 
 textarea::-webkit-scrollbar {
