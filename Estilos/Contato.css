@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --primary: #C4C1D6;
+    --light: #F8F8F8;
+    --dark: #252525;
+    --Confortaa: "Confotaa", cursive;
+    --Roboto-Slab: 'Roboto Slab', serif,
+}
+
+form.Contato{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+textarea#exampleInputText{
+    display: block;
+    width: 100%;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  

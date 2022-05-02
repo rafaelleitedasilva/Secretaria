@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Contato</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/900/900505.png">
@@ -27,17 +27,20 @@
     <!-- CSS Header e Footer -->
     <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
 
+    <!-- CSS Contato -->
+    <link rel="stylesheet" href="../Estilos/Contato.css">
+
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
 </head>
 <body>
      <!-- Spinner Start -->
-     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+     <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border position-relative " style="width: 25rem; height: 25em; " role="status"></div>
         <img class="position-absolute top-50 start-50 translate-middle" src="https://t4.ftcdn.net/jpg/04/56/60/27/240_F_456602791_41ezTBCqzuGrAhClaQbfEu40GzVEFrzY.jpg" alt="Icon">
         <br>
-        <!-- <h1 style="font-size:50px;" style="" style="color: blue;">Secretaria</h1> -->
-    </div>
+       <h1 style="font-size:50px;" style="" style="color: blue;">Secretaria</h1>
+    </div> -->
     <!-- Spinner End -->
 
 
@@ -96,6 +99,35 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <form class="Contato">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="exampleInputEmail1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Idade</label>
+            <input type="number" class="form-control" id="exampleInputEmail1">
+          </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Seus dados estão seguros conosco.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInput" class="form-label">Descrição</label>
+          <textarea id="exampleInputText"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Concordo com os termos</label>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar</button>
+      </form>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
