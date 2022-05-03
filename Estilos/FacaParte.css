@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --primary: #C4C1D6;
+    --light: #F8F8F8;
+    --dark: #252525;
+    --Confortaa: "Confotaa", cursive;
+    --Roboto-Slab: 'Roboto Slab', serif,
+}
+
+.container{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-area{
+    background-color: white;
+    border: 2px dashed black;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.upload-area:hover{
+    border-color: rgba(0, 0, 0, 0.598);
+    color: #252525;
+}
+
+#uploaded-files{
+    background-color: white;
+    border: 1px solid black;
+    height: 200px;
+    margin-top: 5px;
+}
+
+#uploaded-files:hover{
+    border-color: rgba(0, 0, 0, 0.598);
+    color: #252525;
+}

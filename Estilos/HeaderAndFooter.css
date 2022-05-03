@@ -160,6 +160,10 @@ h6,
         opacity: 0;
     }
 
+    a.nav-item.nav-link{
+        font-size: 13px !important;
+    }
+
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
@@ -561,3 +565,11 @@ h6,
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+body::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
