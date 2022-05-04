@@ -53,6 +53,6 @@ function showFile(){
   }else{
     alert("Esse arquivo não é uma imagem!");
     dropArea.classList.remove("active");
-    dragText.textContent = "Drag & Drop to Upload File";
+    dragText.textContent = "Tente novamente";
   }
 }

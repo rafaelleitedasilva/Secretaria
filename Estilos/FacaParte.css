@@ -30,22 +30,26 @@
     color: #fff;
   }
   .drag-area header{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     color: rgb(0, 0, 0);
   }
   .drag-area span{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     color: rgb(0, 0, 0);
   }
   .drag-area button{
-    font-size: 50px;
+    font-size: 20px;
+    background-color: white;
     font-weight: 500;
     border: 0;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.444);
-
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.225);
     cursor: pointer;
+  }
+  .drag-area button:hover{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.399);
+    
   }
   .drag-area img{
     height: 100%;

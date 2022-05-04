@@ -17,6 +17,11 @@ h2,
 .h2,
 .fw-bold {
     font-weight: 600 !important;
+    font-family: var(--Roboto-Slab) !important;
+}
+
+a.navbar-brand.ms-4.ms-lg-0>h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
 h3,
