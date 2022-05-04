@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --primary: #C4C1D6;
+    --light: #F8F8F8;
+    --dark: #252525;
+    --Confortaa: "Confotaa", cursive;
+    --Roboto-Slab: 'Roboto Slab', serif,
+}
