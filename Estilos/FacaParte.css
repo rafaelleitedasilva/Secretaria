@@ -9,39 +9,51 @@
     --Roboto-Slab: 'Roboto Slab', serif,
 }
 
-.container{
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.upload-area{
-    background-color: white;
-    border: 2px dashed black;
+.drag-area{
+    border: 2px dashed rgb(25, 25, 25);
     height: 500px;
-    line-height: 500px;
-    text-align: center;
-    margin-top: 2rem;
-}
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
 
-.upload-area:hover{
-    border-color: rgba(0, 0, 0, 0.598);
-    color: #252525;
-}
+  .drag-area.active{
+    border: 2px solid rgb(44, 44, 44);
+  }
+  .drag-area .icon{
+    font-size: 100px;
+    color: #fff;
+  }
+  .drag-area header{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .drag-area span{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .drag-area button{
+    font-size: 50px;
+    font-weight: 500;
+    border: 0;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.444);
 
-#uploaded-files{
-    background-color: white;
-    border: 1px solid black;
-    height: 200px;
-    margin-top: 5px;
-}
+    cursor: pointer;
+  }
+  .drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
 
-#uploaded-files:hover{
-    border-color: rgba(0, 0, 0, 0.598);
-    color: #252525;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
+div.dimensionar{
+    width: 20%;
 }

@@ -96,14 +96,25 @@
 
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="upload-area">
             Faça o upload aqui
         </div>
         <div id="uploaded-files">
             
         </div>
-    </div>
+    </div> -->
+    
+        <div class="drag-area">
+            <div class="dimensionar"><img src="https://cdn-icons.flaticon.com/png/512/4007/premium/4007710.png?token=exp=1651624926~hmac=641538ee874473e91669a3d7336cd520" alt=""></div>
+            <header>Arraste seu currículo</header>
+            <header> em forma de imagem</header>
+            <span> ou </span>
+            <button>Selecione Aqui</button>
+            <input type="file" hidden>
+          </div>
+      
+      <script src="../Scripts/FacaParte.js"></script>
 
 
 
@@ -172,7 +183,7 @@
     <script src="../Scripts/main.js"></script>
 
     <!-- Upload Area -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         jQuery(document).ready(function($){
             $('.upload-area').on('dragover', function(event){
                 event.preventDefault();
@@ -201,6 +212,14 @@
                 }
             })
         });
-    </script>
+    </script> -->
+   <script>
+       let files = event.originalEvent.dataTranfer.files;
+
+       $('.file-upload').file_upload();
+       function ColocaArquivo(){
+        
+       }
+   </script>
 </body>
 </html>
