@@ -9,7 +9,7 @@
     --Roboto-Slab: 'Roboto Slab', serif,
 }
 
-
+/* a */
 
 h1,
 h2,
@@ -123,15 +123,6 @@ a.text-body.px-2{
 
 
 /*** Navbar ***/
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: var(--Roboto-Slab);
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 30px 0;
@@ -140,7 +131,9 @@ a.text-body.px-2{
     text-transform: uppercase;
     outline: none;
 }
-
+.nav-link.dropdown-toggle{
+    font-size: 13px;
+}
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);

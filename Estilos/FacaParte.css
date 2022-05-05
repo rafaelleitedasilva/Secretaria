@@ -21,7 +21,35 @@
     flex-direction: column;
     padding: 10px;
   }
-
+  .texto{
+    text-align: justify;
+    width: 90%;
+    margin: 10px auto;
+  }
+  div.texto>h1{
+    text-align: center !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  }
+@media screen and (min-width:1090px){
+    .drag-area{
+      width: 600px;
+    }
+    .texto{
+      text-align: justify;
+      width: 600px;
+      margin: 10px auto;
+    }
+    div.imagem{
+      width: 600px;
+      object-fit: cover;
+      margin: auto;
+      margin-top: 50px;
+    }
+    div.texto>h1{
+      text-align: center !important;
+      font-family: var(--Roboto-Slab);
+    }
+}
   .drag-area.active{
     border: 2px solid rgb(44, 44, 44);
   }
