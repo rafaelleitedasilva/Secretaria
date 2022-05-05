@@ -40,6 +40,14 @@ h6,
     font-weight: 400 !important;
 }
 
+.container-fluid.p-0.wow.fadeIn{
+    background-image: radial-gradient(#E0231B, #AD1A15);
+}
+
+a.text-body.px-2{
+    color: #FFFFFF;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
