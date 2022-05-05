@@ -12,7 +12,7 @@
 .drag-area{
     border: 2px dashed rgb(25, 25, 25);
     height: 500px;
-    width: 700px;
+    width: 90%;
     margin: 0 auto;
     border-radius: 3px;
     display: flex;
