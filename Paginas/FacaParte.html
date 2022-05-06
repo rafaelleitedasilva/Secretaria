@@ -120,9 +120,11 @@
             <button>Selecione aqui</button>
             <input type="file" hidden>
           </div>
+          <button class="btn btn-danger" onclick="refresh()"> Enviar </button>
       <div class="imagem">
-          <img src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/221269903_4244231052327890_1998799841384882146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=4EaENVL-1IUAX-v1y3H&_nc_ht=scontent-gru1-1.xx&oh=00_AT_-akItQ7duBaHpGVFK0bsTjS3_c8XU_PIAkzV_PRFBxw&oe=62799934" width="600px" alt="">
+          <img src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/221269903_4244231052327890_1998799841384882146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=4EaENVL-1IUAX-v1y3H&_nc_ht=scontent-gru1-1.xx&oh=00_AT_-akItQ7duBaHpGVFK0bsTjS3_c8XU_PIAkzV_PRFBxw&oe=62799934" class="escola" alt="">
       </div>
+      
       <script src="../Scripts/FacaParte.js"></script>
 
 
@@ -164,7 +166,7 @@
                     <p>Coloque seu email para receber as notícias mais recentes sobre a nossa instituição. </p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
-                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2" onclick="refresh()">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -223,6 +225,10 @@
         });
     </script> -->
    <script>
+       function refresh(){
+           location.reload(true)
+       }
+
        let files = event.originalEvent.dataTranfer.files;
 
        $('.file-upload').file_upload();

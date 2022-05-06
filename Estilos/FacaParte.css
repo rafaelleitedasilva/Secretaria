@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap');
 
-
+body{
+  margin: auto;
+  text-align: center;
+}
 :root {
     --primary: #C4C1D6;
     --light: #F8F8F8;
@@ -8,7 +11,15 @@
     --Confortaa: "Confotaa", cursive;
     --Roboto-Slab: 'Roboto Slab', serif,
 }
+.btn.btn-danger{
+  margin-top:20px;
+  margin-bottom: 10px;
+  width: 50%;
 
+}
+.imagem>img{
+  width: 90%;
+}
 .drag-area{
     border: 2px dashed rgb(25, 25, 25);
     height: 500px;
@@ -34,6 +45,12 @@
     .drag-area{
       width: 600px;
     }
+    .btn.btn-danger{
+      margin-top:20px ;
+      margin-bottom: -5px;
+      width: 600px !important;
+    
+    }
     .texto{
       text-align: justify;
       width: 600px;
@@ -48,6 +65,9 @@
     div.texto>h1{
       text-align: center !important;
       font-family: var(--Roboto-Slab);
+    }
+    .imagem>img{
+      width: 600px;
     }
 }
   .drag-area.active{

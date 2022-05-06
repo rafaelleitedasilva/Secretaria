@@ -1,0 +1,46 @@
+.fotosAlbum{
+    width: 200px;
+    box-shadow: 2px 2px 5px rgb(79, 1, 1);
+}
+
+.fotosAlbum:hover{
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.col{
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px;
+}
+H1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+#carouselExampleSlidesOnly{
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    width: 90% !important;
+    height: 520px !important;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px !important;
+}
+
+img.d-block.w-100{
+    height: 500PX;
+    object-fit: cover;
+}
