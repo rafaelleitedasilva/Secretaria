@@ -1,6 +1,26 @@
 .fotosAlbum{
-    width: 200px;
-    box-shadow: 2px 2px 5px rgb(79, 1, 1);
+    width: 13vw;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+}
+
+.btn.btn-danger{
+    font-size: 20px;
+}
+
+.btn.btn-danger:hover{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .fotosAlbum{
+        width: 70vw;
+        margin: 0px auto;
+        text-align: center;
+    }
 }
 
 .fotosAlbum:hover{
