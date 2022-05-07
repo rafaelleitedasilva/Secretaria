@@ -131,11 +131,9 @@ a.text-body.px-2{
     text-transform: uppercase;
     outline: none;
 }
-.nav-link.dropdown-toggle{
-    font-size: 13px;
-}
+
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
+.navbar .navbar-nav .nav-link.active{
     color: var(--primary);
 }
 
@@ -166,9 +164,10 @@ a.text-body.px-2{
         opacity: 0;
     }
 
-    a.nav-item.nav-link{
+    a.nav-item.nav-link, a.nav-link.dropdown-toggle{
         font-size: 13px !important;
     }
+
 
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);

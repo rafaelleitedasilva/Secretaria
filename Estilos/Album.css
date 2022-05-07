@@ -9,6 +9,7 @@ main{
 
 .btn.btn-danger{
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .btn.btn-danger:hover{
@@ -32,7 +33,7 @@ main{
 .col{
     margin: 0 auto;
     text-align: center;
-    margin: 10px;
+    margin-top: 10px;
 }
 H1{
     margin-top: 20px;
@@ -49,6 +50,7 @@ p{
 
 .row{
     margin: 0 auto;
+    text-align: center;
 }
 
 #carouselExampleSlidesOnly{
