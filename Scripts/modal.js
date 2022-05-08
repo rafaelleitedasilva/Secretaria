@@ -5,19 +5,20 @@ function input(){
 
 
 function modal(fileInput){
-    let rowUpload = document.getElementsByClassName("row")
-    let fileupload = fileInput;
+    let rowUpload = document.getElementById("row")
+    fileInput.save
+    let files = fileInput.files
+
     let colNova = document.createElement("div.col")
-    let imgNova = document.createElement("img")
+    let imgNova = [];   
 
-    console.log(`Mostra ${fileupload.name}`)
-    imgNova.src = fileupload.name;
-
-    imgNova.className="fotosAlbum"
-
-    
-    rowUpload.appendChild(colNova)
-    colNova.appendChild(imgNova)
+    for(var i = 0; i < files.length; i++){
+        imgNova[i] = document.createElement("img")
+        imgNova[i].src = URL.creatObjectURL(Event.target.files[0])
+        imgNova[i].className="fotosAlbum"
+        rowUpload.appendChild(colNova)
+        colNova.appendChild(imgNova[i])
+    }
 }
          
  
