@@ -1,21 +1,20 @@
-let x = 6;
+let x = 5;
 
-
-function atualizar(){
     let update = document.getElementById('Updates')
     let data = document.getElementById('data')
     let autor = document.getElementById('autor')
     let tbody = document.getElementById('tbody')
+
+function atualizar(){
 
     let tr = document.createElement('tr')
     tr.className = 'hide'
     
     let th = document.createElement('th')
     th.scope = 'row'
-    th.innerHTML = x;
     x++;
-
-
+    th.innerHTML = x;
+    
 
     let tdTwo = document.createElement('td')
     tdTwo.innerHTML = String(update.value);
@@ -31,4 +30,9 @@ function atualizar(){
     tr.appendChild(tdTwo)
     tr.appendChild(tdThree)
     tr.appendChild(tdFour)
+}
+
+function excluir(){
+    tbody.remove(tbody.lastChild)
+        x--;
 }

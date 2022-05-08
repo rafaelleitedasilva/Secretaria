@@ -84,6 +84,11 @@ div.form{
     text-align: center;
 }
 
+button.btn.btn-danger{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
 
 
 @media  screen and (max-width:1000px) {

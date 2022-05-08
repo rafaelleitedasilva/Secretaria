@@ -121,7 +121,7 @@
     <div class="atualizacao">
         <table class="table">
             <thead>
-                <h1 class="atualizacao">Quadro de Atualizações</h1>
+                <h1 class="atualizacao" onclick="esconder()">Quadro de Atualizações</h1>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Updates</th>
@@ -133,31 +133,31 @@
               <tr>
                 <th scope="row">1</th>
                 <td>Criação do Curso Robótica</td>
-                <td>22/08/22</td>
+                <td>22-08-22</td>
                 <td>@Marcos</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Atualização da Turma MROB</td>
-                <td>25/08/22</td>
+                <td>25-08-22</td>
                 <td>@Sara</td>
               </tr>
               <tr class="hide">
                 <th scope="row">3</th>
                 <td>Adicionar Alunos</td>
-                <td>25/08/22</td>
+                <td>25-08-22</td>
                 <td>@Rafael</td>
               </tr>
               <tr class="hide">
                 <th scope="row">4</th>
                 <td>Cronograma Semestral</td>
-                <td>27/08/22</td>
+                <td>27-08-22</td>
                 <td>@Cecília</td>
               </tr>
               <tr class="hide">
                 <th scope="row">5</th>
                 <td>Fechar Grade Curricular</td>
-                <td>30/08/22</td>
+                <td>30-08-22</td>
                 <td>@Mateus</td>
               </tr>
             </tbody>
@@ -168,6 +168,7 @@
                   <input type="text" name="" id="autor" required placeholder="Autor">
                   <input type="submit" class="btn btn-danger" value="Enviar" onclick="atualizar()">
               </div>
+              <button class="btn btn-danger" onclick="excluir()">EXCLUIR ÚLTIMA ATUALIZAÇÃO</button>
     </div>
     <hr>
 
@@ -248,9 +249,12 @@
     <script src="../Scripts/main.js"></script>
     <script>
         $(".escondido").hide()
-
+        $(".table").hide()
         function mostrar2(){
             $(".escondido").fadeToggle()
+        }
+        function esconder(){
+            $(".table").toggle()
         }
     </script>
     <script src="../Scripts/atualizar.js"></script>
