@@ -166,7 +166,7 @@
                   <input type="text" name="" id="Updates" placeholder="Update" required >
                   <input type="date" name="" id="data" placeholder="Data" required>
                   <input type="text" name="" id="autor" required placeholder="Autor">
-                  <input type="submit" class="btn btn-danger" value="Enviar" onclick="atualizar()">
+                  <input type="submit" class="btn btn-danger" value="ENVIAR" onclick="atualizar()">
               </div>
               <button class="btn btn-danger One" onclick="excluir()">EXCLUIR ÚLTIMA ATUALIZAÇÃO</button>
     </div>
@@ -184,15 +184,50 @@
     <div class="podio" onclick="mostrar2()">
         <h1>Funcionários do Mês</h1>
         <p>Os melhores professores de todos!</p>
-        <img src="../Imagens/Fotos/71.jpeg" class="escondido"  alt="">
+        <img src="../Imagens/Fotos/71.jpeg" alt="">
         <img class="escondido" src="../Imagens/Fotos/5.jpeg" alt="">
         <img class="escondido" src="../Imagens/Fotos/67.jpeg" alt="">
     </div>
     <hr>
-    <div class="acervo">
-        <h1>Acervo de Fotos</h1>
-        <p>Encontre as fotos que você precisa para o seu projeto</p>
-        <div class="container">
+        <div class="acervo">
+            <a class="acervo" href="album.html">
+                <h1>Acervo de Fotos</h1>
+                <p>Encontre as fotos que você precisa para o seu projeto</p>
+            </a>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-block w-100">
+                        <img class="carrossel" src="../Imagens/Fotos/57.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/43.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/73.jpeg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <img class="carrossel" src="../Imagens/Fotos/76.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/78.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/32.jpeg" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <img class="carrossel" src="../Imagens/Fotos/40.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/12.jpeg" alt="">
+                        <img class="carrossel" src="../Imagens/Fotos/2.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        <!-- <div class="container">
             <div class="item"><img src="../Imagens/Fotos/32.jpeg" width="200px" height="200px" alt=""></div>
             <div class="item"><img src="../Imagens/Fotos/42.jpeg" width="200px" height="200px" alt=""></div>
             <div class="item"><img src="../Imagens/Fotos/16.jpeg" width="200px" height="200px" alt=""></div>
@@ -203,7 +238,7 @@
             <div class="item"><img src="../Imagens/Fotos/70.jpeg" width="200px" height="200px" alt=""></div>
         </div>
         <button class="btn btn-danger" id="prev" onclick="prev()"><</button>
-        <button class="btn btn-danger" id="next" onclick="next()">></button>
+        <button class="btn btn-danger" id="next" onclick="next()">></button> -->
     </div>
 
     </main>
@@ -263,7 +298,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -292,7 +327,7 @@
     </script> -->
 
     <!-- Avançar e Voltar -->
-    <script>
+   <!--  <script>
         let item = document.getElementsByClassName('item')
 
         function next(){
@@ -300,7 +335,7 @@
 
             
         }
-    </script>
+    </script> -->
 
 
     <!-- Template Javascript -->

@@ -102,16 +102,31 @@ div.podio>img{
     margin: 6px;
 }
 
-div.podio>h1, div.mapa>h1, div.acervo>h1{
-    font-size: 25px;
-    color: rgb(192, 4, 4);
+div.podio>h1, div.mapa>h1, div.acervo>a>h1{
+    font-size: 25px !important;
+    color: rgb(192, 4, 4) !important;
 }
+
+a.acervo:hover{
+    color: #252525;
+}
+caption.podio{
+    display: block;
+}
+a.acervo{
+    color: #252525a1;
+}
+
 
 div.form{
     margin: auto;
     text-align: center;
 }
-
+input.btn.btn-danger{
+    display: block;
+    margin: auto;
+    margin-top: 10px ;
+}
 button.btn.btn-danger{
     display: inline-block;
     margin: 10px auto;
@@ -129,8 +144,10 @@ button.btn.btn-danger.One{
 }
 
 /* Netflix Slider */
-
-  .container {
+    .carrossel{
+        width: 30%;
+    }
+  /* .container {
     display: flex;
     margin-top: 20px;
     overflow-x: scroll;
@@ -154,7 +171,7 @@ button.btn.btn-danger.One{
 
  #next:active .container {
     transform: translateX(25%);
- }
+ } */
 
 @media  screen and (max-width:1000px) {
     .col{
@@ -181,6 +198,19 @@ button.btn.btn-danger.One{
         width: 400px;
         margin: 10px 10px ;
     }
+    #Updates{
+        width: 150px;
+    }
+    #autor{
+        width: 150px;
+    }
+    #data{
+        width: 140px;
+    }
+    input.btn.btn-danger{
+        width: 290px;
+    }
+
 }
 
 
