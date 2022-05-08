@@ -118,10 +118,10 @@
 
 
 
-    <div class="atualizacao" onclick="mostrar3()">
+    <div class="atualizacao">
         <table class="table">
             <thead>
-                <h1 class="atualizacao">Quadro de Atualizações</h1>
+                <h1 class="atualizacao" onclick="mostrar3()">Quadro de Atualizações</h1>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Updates</th>
@@ -129,7 +129,7 @@
                 <th scope="col">Autor</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody">
               <tr>
                 <th scope="row">1</th>
                 <td>Criação do Curso Robótica</td>
@@ -160,9 +160,14 @@
                 <td>30/08/22</td>
                 <td>@Mateus</td>
               </tr>
-              <caption class="atualizacao" onclick="mostrar()">...</caption>
             </tbody>
           </table>
+              <div class="form">
+                  <input type="text" name="" id="Updates" placeholder="Update" required >
+                  <input type="date" name="" id="data" placeholder="Data" required>
+                  <input type="text" name="" id="autor" required placeholder="Autor">
+                  <input type="submit" class="btn btn-danger" value="Enviar" onclick="atualizar()">
+              </div>
     </div>
     <hr>
 
@@ -242,12 +247,9 @@
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
     <script>
-        $(".hide").hide()
         $(".escondido").hide()
         $(".table").hide()
-        function mostrar(){
-            $(".hide").fadeToggle()
-        }
+
         function mostrar2(){
             $(".escondido").fadeToggle()
         }
@@ -255,5 +257,6 @@
             $(".table").fadeToggle()
         }
     </script>
+    <script src="../Scripts/atualizar.js"></script>
 </body>
 </html>
