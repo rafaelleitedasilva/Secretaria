@@ -12,6 +12,22 @@ div.mapa{
     width: 100%;
     text-align: center;
 }
+div.acervo{
+    text-align: center;
+
+}/* Scrollbar do Acervo */
+div::-webkit-scrollbar {
+    height: 0px;               /* width of the entire scrollbar */
+  }
+  
+div::-webkit-scrollbar-track {
+    background: rgba(255, 0, 0, 0.223);        /* color of the tracking area */
+  }
+  
+div::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 16, 16);    /* color of the scroll thumb */
+  }
+
 
 iframe{
     width: 90%;
@@ -53,6 +69,10 @@ img.noticias{
     object-position: top;
 }
 
+input{
+    margin-top: 10px;
+}
+
 .col{
     height:300px;
 }
@@ -82,7 +102,7 @@ div.podio>img{
     margin: 6px;
 }
 
-div.podio>h1, div.mapa>h1{
+div.podio>h1, div.mapa>h1, div.acervo>h1{
     font-size: 25px;
     color: rgb(192, 4, 4);
 }
@@ -93,14 +113,19 @@ div.form{
 }
 
 button.btn.btn-danger{
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button.btn.btn-danger.One{
     display: block;
     margin: 10px auto;
     text-align: center;
 }
 
 .escondido{
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.726);
-    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.278);
 }
 
 /* Netflix Slider */
@@ -108,7 +133,6 @@ button.btn.btn-danger{
   .container {
     display: flex;
     margin-top: 20px;
-    padding: 0 55px;
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -124,17 +148,13 @@ button.btn.btn-danger{
     transition: transform 300ms ease 100ms;
   }
 
-  .container:hover .item {
+  #prev:active .container {
     transform: translateX(-25%);
  }
 
- .item:hover ~ .item {
+ #next:active .container {
     transform: translateX(25%);
  }
-
- .item:hover {
-    transform: scale(1.5) !important;
-  }
 
 @media  screen and (max-width:1000px) {
     .col{
