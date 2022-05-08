@@ -118,6 +118,15 @@ a.acervo{
     color: #252525a1;
 }
 
+input#data{
+    height: 40px;
+}
+input#Updates{
+    height: 40px;
+}
+input#autor{
+    height: 40px;
+}
 
 div.form{
     margin: auto;
