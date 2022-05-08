@@ -1,4 +1,19 @@
-;(function modal(){
+function input(){
+    const input = document.getElementById('file-input')
+    input.click();
+}
+
+
+function modal(){
+    const fileupload = document.getElementById('file-input');
+    document.createElement
+}
+         
+ 
+
+
+
+/* ;(function modal(){
 
     //Pega os elementos da tela e declara como constantes
     const leitorDeArquivos = new FileReader(),
@@ -39,4 +54,4 @@
     })
     
 
-})()
+})() */
