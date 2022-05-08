@@ -14,6 +14,7 @@ div.mapa{
 }
 div.acervo{
     text-align: center;
+    padding-bottom: 20px ;
 
 }/* Scrollbar do Acervo */
 div::-webkit-scrollbar {
@@ -139,10 +140,13 @@ button.btn.btn-danger.One{
     text-align: center;
 }
 
-.escondido{
+img.escondido{
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.278);
 }
 
+p.escondido{
+    margin-top: 20px;
+}
 /* Netflix Slider */
     .carrossel{
         width: 30%;
