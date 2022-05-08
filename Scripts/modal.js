@@ -4,9 +4,20 @@ function input(){
 }
 
 
-function modal(){
-    const fileupload = document.getElementById('file-input');
-    document.createElement
+function modal(fileInput){
+    let rowUpload = document.getElementsByClassName("row")
+    let fileupload = fileInput;
+    let colNova = document.createElement("div.col")
+    let imgNova = document.createElement("img")
+
+    console.log(`Mostra ${fileupload.name}`)
+    imgNova.src = fileupload.name;
+
+    imgNova.className="fotosAlbum"
+
+    
+    rowUpload.appendChild(colNova)
+    colNova.appendChild(imgNova)
 }
          
  

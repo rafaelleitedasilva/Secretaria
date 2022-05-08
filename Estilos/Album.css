@@ -55,7 +55,7 @@ p{
     margin-top: 10px;
 }
 
-.row{
+.row, .rowUpload{
     margin: 0 auto;
     text-align: center;
 }
