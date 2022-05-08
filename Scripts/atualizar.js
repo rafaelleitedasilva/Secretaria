@@ -12,8 +12,10 @@ function atualizar(){
     
     let th = document.createElement('th')
     th.scope = 'row'
-    x++;
-    th.innerHTML = x;
+        x++;
+        th.innerHTML = x;
+
+    /* th.innerHTML = x; */
     
 
     let tdTwo = document.createElement('td')
@@ -33,6 +35,8 @@ function atualizar(){
 }
 
 function excluir(){
-    tbody.remove(tbody.lastChild)
+    /* let lastChild = tbody.lastChild
+    lastChild.removeChild() */
+    tbody.removeChild(tbody.lastChild)
         x--;
 }

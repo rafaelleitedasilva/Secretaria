@@ -8,9 +8,16 @@
     --Confortaa: "Confotaa", cursive;
     --Roboto-Slab: 'Roboto Slab', serif,
 }
+div.mapa{
+    width: 100%;
+    text-align: center;
+}
 
+iframe{
+    width: 90%;
+}
 main{
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.562);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.562);
     width: 70%;
     margin: 0 auto;
     height: auto;
@@ -71,10 +78,11 @@ div.podio{
     cursor: pointer;
 }
 div.podio>img{
-    width: 200px;
+    width: 300px;
+    margin: 6px;
 }
 
-div.podio>h1{
+div.podio>h1, div.mapa>h1{
     font-size: 25px;
     color: rgb(192, 4, 4);
 }
@@ -90,6 +98,43 @@ button.btn.btn-danger{
     text-align: center;
 }
 
+.escondido{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.726);
+    border-radius: 5px;
+}
+
+/* Netflix Slider */
+
+  .container {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 55px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .item>img{
+      object-fit: cover;
+  }
+  
+  .item {
+    flex: 0 0 19.7%;
+    text-align: center;
+    margin: 0 2px;
+    transition: transform 300ms ease 100ms;
+  }
+
+  .container:hover .item {
+    transform: translateX(-25%);
+ }
+
+ .item:hover ~ .item {
+    transform: translateX(25%);
+ }
+
+ .item:hover {
+    transform: scale(1.5) !important;
+  }
 
 @media  screen and (max-width:1000px) {
     .col{
@@ -114,7 +159,7 @@ button.btn.btn-danger{
     }
     div.podio>img{
         width: 400px;
-        margin: 10px 0px ;
+        margin: 10px 10px ;
     }
 }
 
