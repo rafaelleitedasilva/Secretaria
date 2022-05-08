@@ -8,10 +8,111 @@
     --Confortaa: "Confotaa", cursive;
     --Roboto-Slab: 'Roboto Slab', serif,
 }
-.podio{
+
+main{
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.562);
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+}
+a.noticias{
+    color: #252525;
+}
+
+caption{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+div.noticias{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+div.texto{
+    display: inline-block;
+    width: 60vw;
+    color: #252525;
+}
+
+h1.noticias{
+    color:rgb(192, 4, 4);
+}
+
+img.noticias{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.col{
+    height:300px;
+}
+
+h1.atualizacao{
+    color: rgb(192, 4, 4);
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+div.atualizacao{
+    margin-top: 30px;
+}
+
+caption.atualizacao{
+    font-size: 30px;
+    cursor: pointer;
+}
+div.podio{
+    text-align: center;
+    cursor: pointer;
+}
+div.podio>img{
+    width: 200px;
+}
+
+div.podio>h1{
+    font-size: 25px;
+    color: rgb(192, 4, 4);
+}
+
+
+
+
+@media  screen and (max-width:1000px) {
+    .col{
+        height:400px;
+    }
+    div.podio>img{
+        width: 400px;
+        margin: 10px 0px ;
+    }
+}
+
+@media  screen and (max-width:800px) {
+    main{
+        width: 95%;
+    }
+    img.noticias{
+        width: 100%;
+        height: 90%;
+    }
+    .col{
+        height:490px;
+    }
+    div.podio>img{
+        width: 400px;
+        margin: 10px 0px ;
+    }
+}
+
+
+/* .podio{
     background-image: url('../Imagens/Fundo\ Professor.jpg');
     margin: auto;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,4 +138,4 @@
 .primeiro, .segundo, .terceiro{
     display: inline-block;
     text-align: center;
-}
+} */

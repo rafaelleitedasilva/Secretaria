@@ -99,12 +99,84 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    <main>
+        <a class="noticias" target="_blank" href="https://sbc.sp.senai.br/curso/87469/120/fundamentos-da-robotica-industrial">
+            <div class="noticias">
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <img class="noticias" src="../Imagens/Fotos/17.jpeg" alt="">
+                      </div>
+                      <div class="col">
+                        <h1 class="noticias"> Primeira turma de Robótica </h1>
+                        <P>Robótica é um ramo educacional e tecnológico que trata de sistemas compostos por partes mecânicas automáticas em conjunto com circuitos integrados, tornando sistemas mecânicos motorizados controlados por circuitos elétricos e inteligência computacional... </P>
+                      </div>
+                </div>
+            </div>
+        </a>
+        <hr>
 
-    <div class="podio">
-        <div class="segundo"><img src="../Imagens/Fotos/66.jpeg" alt=""></div>
-        <div class="primeiro"><img src="../Imagens/Fotos/68.jpeg" alt=""></div>
-        <div class="terceiro"><img src="../Imagens/Fotos/5.jpeg" alt=""></div>
+
+
+    <div class="atualizacao" onclick="mostrar3()">
+        <table class="table">
+            <thead>
+                <h1 class="atualizacao">Quadro de Atualizações</h1>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Updates</th>
+                <th scope="col">Data</th>
+                <th scope="col">Autor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Criação do Curso Robótica</td>
+                <td>22/08/22</td>
+                <td>@Marcos</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Atualização da Turma MROB</td>
+                <td>25/08/22</td>
+                <td>@Sara</td>
+              </tr>
+              <tr class="hide">
+                <th scope="row">3</th>
+                <td>Adicionar Alunos</td>
+                <td>25/08/22</td>
+                <td>@Rafael</td>
+              </tr>
+              <tr class="hide">
+                <th scope="row">4</th>
+                <td>Cronograma Semestral</td>
+                <td>27/08/22</td>
+                <td>@Cecília</td>
+              </tr>
+              <tr class="hide">
+                <th scope="row">5</th>
+                <td>Fechar Grade Curricular</td>
+                <td>30/08/22</td>
+                <td>@Mateus</td>
+              </tr>
+              <caption class="atualizacao" onclick="mostrar()">...</caption>
+            </tbody>
+          </table>
     </div>
+    <hr>
+
+
+
+
+    <div class="podio" onclick="mostrar2()">
+        <h1>Funcionários do Mês</h1>
+        <img src="../Imagens/Fotos/71.jpeg" class="escondido"  alt="">
+        <img class="escondido" src="../Imagens/Fotos/5.jpeg" alt="">
+        <img class="escondido" src="../Imagens/Fotos/67.jpeg" alt="">
+    </div>
+
+    </main>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
@@ -169,5 +241,19 @@
 
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
+    <script>
+        $(".hide").hide()
+        $(".escondido").hide()
+        $(".table").hide()
+        function mostrar(){
+            $(".hide").fadeToggle()
+        }
+        function mostrar2(){
+            $(".escondido").fadeToggle()
+        }
+        function mostrar3(){
+            $(".table").fadeToggle()
+        }
+    </script>
 </body>
 </html>
