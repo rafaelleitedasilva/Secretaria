@@ -1,4 +1,4 @@
-let x = 5;
+let x = 0;
 
     let update = document.getElementById('Updates')
     let data = document.getElementById('data')
