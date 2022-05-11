@@ -16,7 +16,7 @@ body{
 h1{
     font-size: 100px;
     text-align: center;
-    margin-top: 14%;
+    margin-top: 50px;
     color: var(--dark);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
