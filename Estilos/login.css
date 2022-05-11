@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --primary: #C4C1D6;
+    --light: #F8F8F8;
+    --dark: #252525;
+    --Confortaa: "Confotaa", cursive;
+    --Roboto-Slab: 'Roboto Slab', serif,
+}
+
+body{
+    background-color: var(--light);
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 14%;
+    color: var(--dark);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Caixa{
+    background-color: rgb(59, 59, 59);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: var(--primary);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.649);
+    padding: 20PX;
+    margin: auto;
+    width: 450px;
+}
+
+
+  .text-md-center{
+    color: rgb(134, 134, 134);
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+  }
+
+a.btn.btn-danger{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+  i.fa.fa-facebook.fa-lg{
+    margin-right: -8px;
+  }
+
+  ul.nav{
+      margin-right: 20px;
+      justify-content: center !important;
+  }
+
+
+/*BARRA DE ROLAGEM*/
+body::-webkit-scrollbar {
+    width: 0px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0);   
+    border-radius: 20px;       
+    border: 3px solid rgba(255, 255, 255, 0); 
+  }
