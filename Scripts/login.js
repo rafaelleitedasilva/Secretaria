@@ -9,5 +9,6 @@ function validar(){
 
     }else{
         link.href = "#"
+        window.alert("Senha Incorreta!"))
     }
 }

@@ -58,7 +58,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
       <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-          <h1 class="text-primary m-0"><img class="me-3" src="../Imagens/Luminaria.png width="80px" alt="Icon">Secretaria</h1>
+          <h1 class="text-primary m-0"><img class="me-3" src="../Imagens/Luminaria.png" width="80px" alt="Icon">Secretaria</h1>
       </a>
       <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
                       <a href="testimonial.html" class="dropdown-item">Cadastro de Cursos</a>
                   </div>
               </div>
-              <a href="FacaParte.html" class="nav-item nav-link">Faça Parte</a>
+              <!-- <a href="FacaParte.html" class="nav-item nav-link">Faça Parte</a> -->
               <a href="contato.html" class="nav-item nav-link">Contate-nos</a>
               <a href="album.html" class="nav-item nav-link active">Album</a>
               <a href="sobre.html" class="nav-item nav-link">Sobre nós</a>
@@ -144,6 +144,14 @@
                   
               </div>
           </div>
+
+          <div class="drag-area">
+            <div class="dimensionar"><img src="../Imagens/upload-na-nuvem.png" alt=""></div>
+            <header>Arraste a foto que deseja fazer upload ou</header>
+            <button>Selecione aqui</button>
+            <input type="file" hidden>
+          </div>
+
           <button type="file" class="btn btn-danger" onclick="input()" > ADICIONAR MAIS </button>
           <input type="file" hidden id="file-input" multiple onchange="modal(this)">
         
@@ -232,7 +240,9 @@
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
 
-    </script> -->
+    </script>
+
     <script src="../Scripts/modal.js"></script>
+    <script src="../Scripts/FacaParte.js"></script>
 </body>
 </html>
