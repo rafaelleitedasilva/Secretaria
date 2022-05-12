@@ -1,0 +1,30 @@
+main{
+    width: 90%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    margin: auto;
+}
+div.principal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+img.principal{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+}
+
+h1.principal{
+    font-size: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+p.principal{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
