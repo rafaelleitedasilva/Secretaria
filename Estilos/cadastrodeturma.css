@@ -1,0 +1,30 @@
+div.form{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+div.ct{
+    text-align: center;
+}
+
+input.form, select.form,select.form2{
+    height: 40px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+select.form{
+    width: 400px;
+}
+input.form2, textarea.form2{
+    height: 40px;
+    width: 400px;
+    overflow-y: scroll;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+button.btn.btn-danger{
+    text-align: center;
+    margin: auto;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Página Inicial</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
     
@@ -28,9 +28,7 @@
 
     <!-- CSS Header e Footer -->
     <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
-
-    <!-- CSS Contato -->
-    <link rel="stylesheet" href="../Estilos/Contato.css">
+    <link rel="stylesheet" href="../Estilos/cadastrodeturma.css">
 
     
 </head>
@@ -72,7 +70,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
             <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
                 <div class="dropdown-menu border-0 m-0">
@@ -84,7 +82,7 @@
                     </div>
                 </div>
                 <!-- <a href="FacaParte.html" class="nav-item nav-link">Faça Parte</a> -->
-                <a href="contato.html" class="nav-item nav-link active">Contate-nos</a>
+                <a href="contato.html" class="nav-item nav-link">Contate-nos</a>
                 <a href="album.html" class="nav-item nav-link">Album</a>
                 <a href="sobre.html" class="nav-item nav-link">Sobre nós</a>
             </div>
@@ -92,35 +90,73 @@
     </nav>
     <!-- Navbar End -->
 
-    <form class="Contato">
-        <h1>CONTATO</h1>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Idade</label>
-            <input type="number" class="form-control" id="exampleInputEmail1">
-          </div>
-
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Seus dados estão seguros conosco.</div>
+    
+    <div class="ct">
+        <h3>CADASTRO DE TURMA</h3>
+        <div class="form">
+            <p> Código </p> <input id="codigo" class="form" type="text" maxlength="10" placeholder="15AB27">
         </div>
-
-        <div class="mb-3">
-          <label for="exampleInput" class="form-label">Descrição</label>
-          <textarea id="exampleInputText" placeholder="Digite aqui a sua mensagem..."></textarea>
+        <div class="form">
+            <p> Escola </p> <select id="escola" class="form" maxlength="30">
+        <option>Senai Manuel Garcia Filho</option></select>
         </div>
-
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Concordo com os termos</label>
+        <div class="form">
+            <p> Ano Letivo </p><select id="anoletivo" class="form2" maxlength="4">
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+        </select>
         </div>
-        <button type="submit" class="btn btn-dark">Enviar</button>
-      </form>
+        <br>
+        <div class="form">
+            <p> Periodo </p><select id="periodo" class="form2" maxlength="10">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </div>
+            <div class="form">
+            <p> Termo </p><select id="termo" class="form2" maxlength="1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form">
+            <p> Curso </p> <input id="curso" class="form2" type="text" maxlength="20" placeholder="Desenvolvimento de Sistemas">
+        </div>
+        <div class="form">
+            <p> Código de Identificação </p> <input id="codigodeindentificacao" class="form" type="text" maxlength="10" placeholder="M1DSI">
+        </div>
+        <br>
+        <div class="form">
+            <p> Data de Inicio </p><input type="date" name="" id="datainicial" placeholder="Data" required>
+        </div> 
+        <div class="form">
+            <p> Data de Término</p><input  type="date" name="" id="datafinal" placeholder="Data" required>
+        </div> 
+        <div class="form">
+            <p> Carga Horaria  </p><input id="cargahoraria" class="form" type="number" maxlength="10" placeholder="1400">
+        </div>
+        <div class="form">
+            <p>Vagas  </p> <input id="vagas" class="form" type="number" maxlength="10" placeholder="20">
+        </div>
+        <br>
+        <button class="btn btn-success"> Cadastrar </button>
+        <button class="btn btn-danger">Excluir</button>
+    </div>
+    <div class="visualizar">
+
+    </div>
+    
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
