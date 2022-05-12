@@ -28,7 +28,7 @@
 
     <!-- CSS Header e Footer -->
     <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Estilos/cadastrodeturma.css">
+    <link rel="stylesheet" href="../Estilos/cadastrocursos.css">
 
     
 </head>
@@ -89,75 +89,61 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
-    
-    <div class="ct">
-        <h3>CADASTRO DE TURMA</h3>
-        <div class="form">
-            <p> Código </p> <input id="codigo" class="form" type="text" maxlength="10" placeholder="15AB27">
+    <main>
+        <div class="Curso">
+            <form class="Curso">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome do Curso</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Carga horária</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1">
+                  </div>
+        
+                  
+                <div class="mb-3">
+                  <label for="exampleInput" class="form-label">Grade Curricular</label>
+                  <textarea id="exampleInputText" placeholder=""></textarea>
+                </div>
+                    
+                    
+                    <div class="mb-3">
+                        <br>
+                        Especificações do Curso
+                        <select class="form-label" id="exampleInputText" placeholder="">
+                            <option>Capital</option>
+                            <option>Grande São Paulo</option>
+                            <option>Interior</option>
+                        </select>
+                        <select class="form-label" id="exampleInputText"        placeholder="">
+                            <option>Curso Livre</option>
+                            <option>Curso Técnico</option>
+                            <option>Graduação</option>
+                            <option>Pós-Graduação</option>
+                            <option>Superior Extensão</option>
+                        </select>
+                        <select class="form-label" id="exampleInputText" placeholder="">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+                        <div class="mb-3">
+                            <br>
+                            <label for="exampleInput" class="form-label"></label>Confirme sua senha</label>
+                            <input class="form" type="password" maxlength="80" placeholder="">
+                          </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Turma iniciada</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Cadastrar</button>
+              </form>
         </div>
-        <div class="form">
-            <p> Escola </p> <select id="escola" class="form" maxlength="30">
-        <option>Senai Manuel Garcia Filho</option></select>
-        </div>
-        <div class="form">
-            <p> Ano Letivo </p><select id="anoletivo" class="form2" maxlength="4">
-            <option>2022</option>
-            <option>2021</option>
-            <option>2020</option>
-            <option>2019</option>
-            <option>2018</option>
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-        </select>
-        </div>
-        <br>
-        <div class="form">
-            <p> Periodo </p><select id="periodo" class="form2" maxlength="10">
-                <option>Manhã</option>
-                <option>Tarde</option>
-                <option>Noite</option>
-            </select>
-        </div>
-            <div class="form">
-            <p> Termo </p><select id="termo" class="form2" maxlength="1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
-        </div>
-        <div class="form">
-            <p> Curso </p> <input id="curso" class="form2" type="text" maxlength="20" placeholder="Desenvolvimento de Sistemas">
-        </div>
-        <div class="form">
-            <p> Código de Identificação </p> <input id="codigodeindentificacao" class="form" type="text" maxlength="10" placeholder="M1DSI">
-        </div>
-        <br>
-        <div class="form">
-            <p> Data de Inicio </p><input type="date" name="" id="datainicial" placeholder="Data" required>
-        </div> 
-        <div class="form">
-            <p> Data de Término</p><input  type="date" name="" id="datafinal" placeholder="Data" required>
-        </div> 
-        <div class="form">
-            <p> Carga Horaria  </p><input id="cargahoraria" class="form" type="number" maxlength="10" placeholder="1400">
-        </div>
-        <div class="form">
-            <p>Vagas  </p> <input id="vagas" class="form" type="number" maxlength="10" placeholder="20">
-        </div>
-        <br>
-        <button class="btn btn-success"> Cadastrar </button>
-        <button class="btn btn-danger">Excluir</button>
-    </div>
-    <div class="visualizar">
-
-    </div>
-    
 
 
-
+    </main>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
