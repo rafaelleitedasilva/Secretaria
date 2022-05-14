@@ -10,14 +10,18 @@
 }
 
 body{
-    background-color: var(--light);
+    background-image: radial-gradient(rgb(192, 4, 4), rgb(69, 0, 0));
 }
 
 h1{
     font-size: 100px;
+    width: fit-content;
+    padding: 20px;
     text-align: center;
+    margin: auto;
     margin-top: 50px;
-    color: var(--dark);
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.87);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -25,7 +29,7 @@ h1{
     background-color: rgb(59, 59, 59);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
-    color: var(--primary);
+    color: rgba(255, 255, 255, 0.87);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.649);
     padding: 20PX;
     margin: auto;
@@ -34,7 +38,7 @@ h1{
 
 
   .text-md-center{
-    color: rgb(134, 134, 134);
+    color: rgba(255, 255, 255, 0.87);
     font-family: var(--fonte-destaque);
     font-size: 30px;
   }
