@@ -6,10 +6,12 @@
             if(String(senha.value) == "Nota100!"){
                 botao.onclick = "#"
                 botao.type = "submit"
-                window.alert("Curso Enviado")
+                botao.className= 'btn btn-success'
+                window.alert('Senha correta!')
             }else{
-                window.alert("Senha Incorreta, tente novamente!")
                 botao.type="#"
+                botao.className= 'btn btn-danger'
+                window.alert('Senha Incorreta!')
             }
           
         }

@@ -118,20 +118,21 @@
                             <option>Tarde</option>
                             <option>Noite</option>
                         </select>
+                        <br>
+                        <label class="form-check-label" for="exampleCheck1">Turma iniciada: </label>
+                      <input type="radio" class="form-check-input" id="exampleCheck1" name="Turma Iniciada?" value="Sim" > Sim
+                      <input type="radio" class="form-check-input" id="exampleCheck2" name="Turma Iniciada?" value="Não"> Não
                     </div>
                     <div class="mb-3">
                             <br>
                             <label for="exampleInput" class="form-label"></label>Confirme sua senha</label>
-                            <input class="form" type="password" id="senha" maxlength="80" placeholder="Nota100!">
-                 
-                  
-                      <label class="form-check-label" for="exampleCheck1">Turma iniciada: </label>
-                      <input type="radio" class="form-check-input" id="exampleCheck1" name="Turma Iniciada?" value="Sim" > Sim
-                      <input type="radio" class="form-check-input" id="exampleCheck2" name="Turma Iniciada?" value="Não"> Não
+
+                            <input class="form" type="password" id="senha" maxlength="80" placeholder="Nota100!"><button type="#" style="margin-left: 10px;" onclick="confirma()" class="btn btn-dark">Confirmar Senha</button>
+
+                            <button type="#" id="enviar" class="btn btn-dark">Enviar Curso</button>
+                            <input type="hidden" name="_next" value="https://rafaelleitedasilva.github.io/Secretaria/Paginas/cadastrocursos.html">
+                            <input type="hidden" name="_captcha" value="false">
                     </div>
-                <button type="#" onclick="confirma()" id="enviar" class="btn btn-dark">Enviar</button>
-                <input type="hidden" name="_next" value="https://rafaelleitedasilva.github.io/Secretaria/Paginas/cadastrocursos.html">
-                <input type="hidden" name="_captcha" value="false">
             </form> 
         </div>
         <hr>
