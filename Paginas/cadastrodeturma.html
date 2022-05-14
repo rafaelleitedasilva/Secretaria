@@ -150,6 +150,7 @@
             <input id='submit' type="submit" class="btn btn-success" onclick="check()" value="Cadastrar" accesskey="s"></button>
         <button class="btn btn-danger" onclick="excluir()">Excluir</button>
     </div>
+    <hr>
     <div class="visualizar" id="visualizar">
         
     </div>
@@ -224,7 +225,7 @@
         let view = document.getElementById("visualizar")
 
         function check(){
-            if($('#vagas').val() == '' && $('#curso').val() == '' && $('#codigo').val() == '' && $('#codigodeidentificacao').val() == ''){
+            if($('#vagas').val() == ''){
             window.alert("Digite todos os campos!")
         }else{
             cadastro().click()

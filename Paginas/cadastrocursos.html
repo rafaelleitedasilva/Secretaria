@@ -20,17 +20,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-
     <!-- CSS Header e Footer -->
     <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/cadastrocursos.css">
 
-    
 </head>
 <body>
 
@@ -89,61 +82,63 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
     <main>
         <div class="Curso">
-            <form class="Curso">
+            <form class="Curso" action="https://formsubmit.co/secretariasenai@outlook.com">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nome do Curso</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                  </div>
-                  <div class="mb-3">
+                    <input type="text" name="Nome" class="form-control" id="exampleInputCurso" required>
+                </div>
+                <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Carga horária</label>
-                    <input type="number" class="form-control" id="exampleInputEmail1">
-                  </div>
-        
-                  
+                    <input type="number" name="Carga Horária" class="form-control" id="exampleInputCarga" required>
+                </div>
                 <div class="mb-3">
                   <label for="exampleInput" class="form-label">Grade Curricular</label>
-                  <textarea id="exampleInputText" placeholder=""></textarea>
+                  <textarea id="exampleInputText" name="Grade Curricular" placeholder="" required></textarea>
                 </div>
-                    
-                    
                     <div class="mb-3">
                         <br>
                         Especificações do Curso
-                        <select class="form-label" id="exampleInputText" placeholder="">
+                        <select class="form-label" id="exampleInputLocal" name="Local" placeholder="" required>
                             <option>Capital</option>
                             <option>Grande São Paulo</option>
                             <option>Interior</option>
                         </select>
-                        <select class="form-label" id="exampleInputText"        placeholder="">
+                        <select class="form-label" id="exampleInputTipo" name="Tipo de Curso" placeholder="" required>
                             <option>Curso Livre</option>
                             <option>Curso Técnico</option>
                             <option>Graduação</option>
                             <option>Pós-Graduação</option>
                             <option>Superior Extensão</option>
                         </select>
-                        <select class="form-label" id="exampleInputText" placeholder="">
+                        <select class="form-label" id="exampleInputPeriodo" name="Período" placeholder="" required>
                             <option>Manhã</option>
                             <option>Tarde</option>
                             <option>Noite</option>
                         </select>
                     </div>
-                        <div class="mb-3">
+                    <div class="mb-3">
                             <br>
                             <label for="exampleInput" class="form-label"></label>Confirme sua senha</label>
-                            <input class="form" type="password" maxlength="80" placeholder="">
-                          </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Turma iniciada</label>
-                </div>
-                <button type="submit" class="btn btn-dark">Cadastrar</button>
-              </form>
+                            <input class="form" type="password" id="senha" maxlength="80" placeholder="Nota100!">
+                 
+                  
+                      <label class="form-check-label" for="exampleCheck1">Turma iniciada: </label>
+                      <input type="radio" class="form-check-input" id="exampleCheck1" name="turma" value="Sim" > Sim
+                      <input type="radio" class="form-check-input" id="exampleCheck2" name="turma" value="Não"> Não
+                    </div>
+                <button type="submit" onclick="confirma()" class="btn btn-dark">Enviar</button>
+            </form> 
+            <div id="aqui">
+
+            </div>
         </div>
-
-
+        <hr>
+        
     </main>
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -207,5 +202,8 @@
 
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
+
+    <!-- Confirma Cadastro -->
+    <script src="../Scripts/CadastroCurso.js"></script>
 </body>
 </html>
