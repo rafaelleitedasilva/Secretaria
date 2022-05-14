@@ -42,6 +42,7 @@ div.Cadastro{
     flex-basis: 33%;
     margin:auto;
     margin-left: 2px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:800px){
