@@ -27,3 +27,32 @@ button.btn.btn-danger{
     text-align: center;
     margin: auto;
 }
+
+div.visualizar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    flex-basis: 40%;
+}
+
+div.Cadastro{
+    text-align: center;
+    flex-basis: 33%;
+    margin:auto;
+    margin-left: 2px;
+}
+
+@media screen and (max-width:800px){
+    div.Cadastro{
+        text-align: center;
+        flex-basis: 100%;
+        margin:auto;
+        margin-left: 2px;
+    }
+}
+
+h1.titulo{
+    text-align: center;
+}

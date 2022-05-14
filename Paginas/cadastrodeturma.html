@@ -89,12 +89,10 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
-    <form action="">
         <div class="ct">
             <h3>CADASTRO DE TURMA</h3>
             <div class="form">
-                <p> Código </p> <input id="codigo" class="form" type="text" maxlength="10" placeholder="15AB27">
+                <p> Código </p> <input id="codigo" class="form" type="text" maxlength="10" placeholder="15AB27" required>
             </div>
             <div class="form">
                 <p> Escola </p> <select id="escola" class="form" maxlength="30">
@@ -102,7 +100,7 @@
         </select>
             </div>
             <div class="form">
-                <p> Ano Letivo </p><select id="anoletivo" class="form2" maxlength="4">
+                <p> Ano Letivo </p><select id="anoletivo" class="form2" maxlength="4" >
                 <option>2022</option>
                 <option>2021</option>
                 <option>2020</option>
@@ -130,10 +128,10 @@
                 </select>
             </div>
             <div class="form">
-                <p> Curso </p> <input id="curso" class="form2" type="text" maxlength="20" placeholder="Desenvolvimento de Sistemas">
+                <p> Curso </p> <input id="curso" class="form2" type="text" maxlength="60" placeholder="Desenvolvimento de Sistemas" required>
             </div>
             <div class="form">
-                <p> Código de Identificação </p> <input id="codigodeindentificacao" class="form" type="text" maxlength="10" placeholder="M1DSI">
+                <p> Código de Identificação </p> <input id="codigodeindentificacao" class="form" type="text" maxlength="10" placeholder="M1DSI" required>
             </div>
             <br>
             <div class="form">
@@ -143,15 +141,14 @@
                 <p> Data de Término</p><input  type="date" name="" id="datafinal" placeholder="Data" required>
             </div>
             <div class="form">
-                <p> Carga Horaria  </p><input id="cargahoraria" class="form" type="number" maxlength="10" placeholder="1400">
+                <p> Carga Horaria  </p><input id="cargahoraria" class="form" type="number" maxlength="10" placeholder="1400" required>
             </div>
             <div class="form">
-                <p>Vagas  </p> <input id="vagas" class="form" type="number" maxlength="10" placeholder="20">
+                <p>Vagas  </p> <input id="vagas" class="form" type="number" maxlength="10" placeholder="20" required>
             </div>
             <br>
-            <input type="submit" class="btn btn-success" onclick="cadastro()" value="Cadastrar"></button>
-    </form>
-        <button class="btn btn-danger">Excluir</button>
+            <input id='submit' type="submit" class="btn btn-success" onclick="check()" value="Cadastrar" accesskey="s"></button>
+        <button class="btn btn-danger" onclick="excluir()">Excluir</button>
     </div>
     <div class="visualizar" id="visualizar">
         
@@ -224,7 +221,27 @@
     <script src="../Scripts/cadastroTurma.js"></script>
 
     <script>
-        if()
+        let view = document.getElementById("visualizar")
+
+        function check(){
+            if($('#vagas').val() == '' && $('#curso').val() == '' && $('#codigo').val() == '' && $('#codigodeidentificacao').val() == ''){
+            window.alert("Digite todos os campos!")
+        }else{
+            cadastro().click()
+        }
+        }
+
+        
+
+        function excluir(){
+            let confirm = window.confirm("Tem certeza que deseja excluir a última turma?")
+
+            if(confirm == true){
+                view.removeChild(view.lastChild)
+                view.removeChild(view.lastChild)
+            }
+        }
+        
     </script>
 </body>
 </html>
