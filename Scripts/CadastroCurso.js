@@ -2,6 +2,7 @@
         function confirma(){
             let senha = document.getElementById('senha')
             let botao = document.getElementById('enviar')
+            botao.type = "#"
 
             if(String(senha.value) == "Nota100!"){
                 botao.onclick = "#"

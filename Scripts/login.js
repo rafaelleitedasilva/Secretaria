@@ -8,7 +8,7 @@ function validar(){
         link.href = "#"
         window.alert("Você precisa concordar com os termos!")
             
-    }else if(String(email.value) == "secretariaMDES@senai.com" && String(senha.value) == "Nota100!"){
+    }else if(String(email.value) == "secretaria@senai.com" && String(senha.value) == "Nota100!"){
         link.href = "index.html"
     } else{
         link.href = "#"
