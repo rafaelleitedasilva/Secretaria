@@ -1,0 +1,70 @@
+main{
+    width: 90%;
+    margin: auto;
+}
+
+div.aluno{
+    width: 100%;
+    display: inline;
+    
+}
+
+form{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.362);
+    margin-top: 20px;
+}
+
+.btn.btn-danger{
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+div#idade, div#nome{
+    display: inline-block;
+}
+
+
+
+input.idade{
+    width: 23px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    width: 150px;
+    border: 0px;
+    border-bottom: 1px solid;
+}
+
+input.nome{
+    width: 200px  !important;
+}
+
+p{
+    display: inline;
+    
+}
+
+.visualizar{
+    width: 100%;
+    font-size: 20px;
+}
+
+#maepai{
+    display: none;
+}
+
+h1.excluir{
+    text-align: center;
+    font-size: 20px;
+}

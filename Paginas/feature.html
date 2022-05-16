@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Curso</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/900/900505.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS Header e Footer -->
+    <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/cadastrodealuno.css">
+
+</head>
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>(11) 4070-8950</a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>senaidiadema@sp.senai.br</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
+                    <a class="text-body px-2" href="termos.html">Termos</a>
+                    <a class="text-body px-2" href="privacidade.html">Privacidade</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img class="me-3" src="../Imagens/Luminaria.png" width="80px" alt="Icon">Secretaria</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+            <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+                <div class="dropdown-menu border-0 m-0">
+                        <a href="feature.html" class="dropdown-item">Cadastro de Aluno</a>
+                        <a href="cadastrodeturma.html" class="dropdown-item">Cadastro de Turma</a>
+                        <!-- <a href="team.html" class="dropdown-item">Conteúdo Formativo</a> -->
+                        <a href="appointment.html" class="dropdown-item">Unidades Curriculares</a>
+                        <a href="cadastrocursos.html" class="dropdown-item">Cadastro de Cursos</a>
+                    </div>
+                </div>
+                <!-- <a href="FacaParte.html" class="nav-item nav-link">Faça Parte</a> -->
+                <a href="contato.html" class="nav-item nav-link">Contate-nos</a>
+                <a href="album.html" class="nav-item nav-link">Album</a>
+                <a href="sobre.html" class="nav-item nav-link">Sobre nós</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+        <div class="Aluno">
+            <form class="Aluno" method="POST">
+                <h1>Cadastro de Aluno</h1>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nome Completo:</label>
+                    <input type="text" name="Nome do Curso" class="nome" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Idade:</label>
+                    <input onchange="verificar()" type="number" class="idade" id="idade" required maxlength="2">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInput" class="form-label">CPF do Aluno:</label>
+                    <input id="exampleInputText" name="Grade Curricular" required maxlength="14">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInput" class="form-label">Turma: </label>
+                    <input id="turma" name="Grade Curricular" placeholder="" required>
+                  </div>
+                <div class="mb-3" id="maepai">
+                    <hr>
+                    <label for="exampleInput" class="form-label">Nome da Mãe</label>
+                    <input id="exampleInputText" name="Grade Curricular" >
+                    <br>
+                    <label for="exampleInput" class="form-label">CPF da Mãe</label>
+                    <input id="exampleInputText" name="Grade Curricular" required maxlength="14">
+                    <br>
+                    <label for="exampleInput" class="form-label">Nome do Pai</label>
+                    <input id="exampleInputText" name="Grade Curricular">
+                    <br>
+                    <label for="exampleInput" class="form-label">CPF do Pai</label>
+                    <input id="exampleInputText" name="Grade Curricular"  required maxlength="14">
+                </div>
+                
+                <button class="btn btn-success" onclick="registrar()"> Registrar </button>
+
+                <div id="mostrar">
+    
+                </div>
+            </form>
+
+            <form class="Aluno">
+                <h1 class="excluir">Excluir Aluno</h1>
+            <button class="btn btn-danger" onclick="excluir()"> Excluir Último Registro</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Endereço</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>R. Guatemala, 19 - Jardim Canhema, Diadema - SP, 09941-140</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>(11) 4070-8950</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>senaidiadema@sp.senai.br</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Serviços</h3>
+                    <a class="btn btn-link" href="">Escola</a>
+                    <a class="btn btn-link" href="">Documentação</a>
+                    <a class="btn btn-link" href="">Parceiros</a>
+                    <a class="btn btn-link" href="">Time</a>
+                    <a class="btn btn-link" href="">Manual</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Links Rápidos</h3>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="">Sobre</a>
+                    <a class="btn btn-link" href="">Suporte</a>
+                    <a class="btn btn-link" href="">Contate-nos</a>
+                    <a class="btn btn-link" href="">Termos e Condições</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Notícias</h3>
+                    <p>Coloque seu email para receber as notícias mais recentes sobre a nossa instituição. </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Secretaria</a>, Todos os direitos resrvados
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../Scripts/main.js"></script>
+
+    <!-- Confirma Cadastro -->
+    <script src="../Scripts/CadastroCurso.js"></script>
+    
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Idade -->
+    <script>
+        let idade = document.getElementById('idade')
+        let maepai = document.getElementById('maepai')
+        
+
+
+        function verificar(){
+        if(Number(idade.value) <11 ){
+            window.alert("Somente maiores de 10 anos!")
+            .reload()
+        } else if (Number(idade.value) < 18){
+            maepai.style = 'display: block;'
+        }else{
+            maepai.style = 'display: none;'
+        }}
+
+
+
+
+        function registrar(){
+            let nome = document.getElementById('nome')
+            let turma = document.getElementById('turma')
+            let div = document.getElementById('mostrar')
+
+            let pNome = document.createElement('p')
+            pNome.innerHTML = `<hr>Nome: <strong>${String(nome.value)}</strong>`
+            
+            let pTurma = document.createElement('p')
+            pTurma.innerHTML = `<br> Turma: <strong>${String(turma.value)}</strong>`
+            
+            let ID = Math.floor(Math.random() * (10000 - 1000)) + 1000
+
+            let pId = document.createElement('p')
+            pId.innerHTML = `<br>ID do Aluno: ${ID}`
+
+            pNome.id = ID
+            pTurma.id = ID
+            pId.id = ID
+
+
+            div.appendChild(pNome)
+            div.appendChild(pTurma)
+            div.appendChild(pId)
+        }
+        let IDAluno = document.getElementById('idaluno')
+
+        function excluir(){
+            if(Number(IDAluno.value) === Number(pId.id)){
+                pNome.innerHTML = ''
+                pTurma.innerHTML = ''
+                pId.innerHTML = ''
+                window.alert("Aluno removido!")
+            }else{
+                window.alert("Aluno não encontrado!"
+            })
+        }
+    </script>
+</body>
+</html>
