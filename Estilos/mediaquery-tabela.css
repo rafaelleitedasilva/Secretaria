@@ -1,0 +1,51 @@
+@media (max-width: 1010px){
+
+    table, td, tr, td, tbody, thead, th{ /*Força a desestruturação da table e seus elementos*/
+        display: block;
+    }
+
+    .titulo h2{
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .corpo-curso-area{
+        margin-left: 1%;
+        margin-right: 1.1%;
+    }
+
+    .table-curso-area{   
+    
+    box-shadow: 4px 4px;
+    border: 1px;
+    border-style: solid;
+    border-width: auto;
+    border-color: auto;
+    background-color: white;
+    }
+
+    .table-curso-area input{
+        width: auto;
+    }
+
+    .botao-confirmar{
+        margin-top: 2%;
+        margin-left: 43%;
+    }
+    
+    .conf-btn{
+        border: none;
+        background-color: rgb(3, 196, 3);
+        height: 35px;
+    }
+    
+    .conf-btn a{
+        color: ivory;
+    }
+    
+    .conf-btn:hover, .conf-btn a:hover{
+        color: ivory;
+        background-color: rgb(170, 255, 172);
+    }
+
+}

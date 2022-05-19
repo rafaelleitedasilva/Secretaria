@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faça Parte</title>
+    <title>Conteúdo Formativo</title>
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
-
+    
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/900/900505.png">
 
@@ -21,21 +22,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
     <!-- CSS Header e Footer -->
     <link href="../Estilos/HeaderAndFooter.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Estilos/FacaParte.css">
 
-    
+    <!-- .CSS Conteúdo Formativo -->
+    <link rel="stylesheet" href="../Estilos/conteudoformativo.css" type="text/css">
+
+    <link rel="stylesheet" href="../Estilos/mediaquery-tabela.css" type="text/css">
 </head>
-<body>
 
+<body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-3">
                     <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>(11) 4070-8950</a>
-                    <a class="text-body px-2" href="mailto:senaidiademasp@sp.senai.br"><i class="fa fa-envelope-open text-primary me-2"></i>senaidiadema@sp.senai.br</a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>senaidiadema@sp.senai.br</a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -65,18 +73,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
             <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
                 <div class="dropdown-menu border-0 m-0">
                         <a href="feature.html" class="dropdown-item">Cadastro de Aluno</a>
                         <a href="cadastrodeturma.html" class="dropdown-item">Cadastro de Turma</a>
-                        <!-- <a href="team.html" class="dropdown-item">Conteúdo Formativo</a> -->
-                        <a href="appointment.html" class="dropdown-item">Unidades Curriculares</a>
+                        <a href="conteudoformativo.html" class="dropdown-item">Conteúdo Formativo</a>
                         <a href="cadastrocursos.html" class="dropdown-item">Cadastro de Cursos</a>
                     </div>
                 </div>
-                <a href="FacaParte.html" class="nav-item nav-link active">Faça Parte</a>
+                <!-- <a href="FacaParte.html" class="nav-item nav-link">Faça Parte</a> -->
                 <a href="contato.html" class="nav-item nav-link">Contate-nos</a>
                 <a href="album.html" class="nav-item nav-link">Album</a>
                 <a href="sobre.html" class="nav-item nav-link">Sobre nós</a>
@@ -85,38 +92,105 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- [!] Conteúdo Formativo -->
 
+        <!-- [!] Corpo e Conteúdo (Conteúdo Formativo) -->
 
+        <div class="corpo-curso-area">
 
-    <!-- <div class="container">
-        <div class="upload-area">
-            Faça o upload aqui
+            <div class="titulo">
+            <h2>Conteúdo Formativo</h2>
+            </div>
+
+            <table class="table-curso-area">
+                <tr>
+                    <td>
+                        <div class="menu-div">
+                        <p>Turma</p>
+                            <select id="turmas">
+                                <option>Insira uma turma</option>
+                                <option>Turma 1</option>
+                                <option>Turma 2</option>
+                                <option>Turma 3</option>
+                                <option>Turma 4</option>
+                                <option>Turma 5</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="menu-div">
+                        <p>Curso</p>
+                            <select id="cursos">
+                                <option>Insira um curso</option>
+                                <option>Análise e Desenvolvimento de Sistemas</option>
+                                <option>Mecatrônica</option>
+                                <option>Soldagem</option>
+                                <option>Robótica Indústrial</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="menu-div">
+                        <p>Unidades Curriculares</p>
+                            <select id="unicurriculares">
+                                <option>Lógica de Programação</option>
+                                <option>Sistemas Operacionais</option>
+                                <option>Programação Web</option>
+                                <option>Hardware</option>
+                                <option>Redes</option>
+                            </select>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Data</p>
+                        <input class="campo-area" type="date">
+                    </td>
+
+                    <td>
+
+                        <div class="menu-div">
+                            <p>Período</p>
+                            <select id="periodo">
+                                <option>Insira um período</option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                        <div class="menu-div">
+                            <p>Conteúdo Formativo</p>
+                            <select id="conteudoform">
+                                <option>Insira uma opção</option>
+                                <option>Conteúdo Formativo 1</option>
+                                <option>Conteúdo Formativo 2</option>
+                                <option>Conteúdo Formativo 3</option>
+                                <option>Conteúdo Formativo 4</option>
+                            </select>
+                        </div>
+
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="botao-confirmar">
+                <button class="conf-btn"><a href="index.html">Enviar</a></button>
+            </div>
+
         </div>
-        <div id="uploaded-files">
-            
-        </div>
-    </div> -->
-    <div class="texto">
-        <h1>Entre para a nossa equipe!</h1>
-        <p>O Serviço Nacional de Aprendizagem Industrial (SENAI) foi criado pelo decreto-lei 4.048[3] de 22 de janeiro de 1942. No início a arrecadação do SENAI era de dois mil réis mensais por empregado das empresas filiadas à Confederação Nacional da Indústria (CNI). Esse sistema foi alterado em 5 de fevereiro de 1944 quando a arrecadação passou a corresponder a 1% do valor total da folha de pagamento das indústrias (decreto-lei n° 6.246).</p>
-        <p>Mas a Formação Profissional no Brasil tem seu primeiro registro em 1874 quando o presidente da província de Pernambuco Henrique Pereira de Lucena obrigou as fábricas nacionais a se encarregarem do preparo do seu pessoal, levando as empresas a fundarem o SENAI.</p>
 
-    </div>
-        <div class="drag-area">
-            <div class="dimensionar"><img src="../Imagens/upload-na-nuvem.png" alt=""></div>
-            <header>Arraste seu currículo</header>
-            <header>em forma de imagem</header>
-            <button>Selecione aqui</button>
-            <input type="file" hidden>
-          </div>
-          <button class="btn btn-danger" onclick="refresh()"> Enviar </button>
-      <div class="imagem">
-          <img src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/221269903_4244231052327890_1998799841384882146_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=4EaENVL-1IUAX-v1y3H&_nc_ht=scontent-gru1-1.xx&oh=00_AT_-akItQ7duBaHpGVFK0bsTjS3_c8XU_PIAkzV_PRFBxw&oe=62799934" class="escola" alt="">
-      </div>
-      
-      <script src="../Scripts/FacaParte.js"></script>
-
-
+    <!-- [/!] Conteúdo Formativo -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
@@ -155,7 +229,7 @@
                     <p>Coloque seu email para receber as notícias mais recentes sobre a nossa instituição. </p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
-                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2" onclick="refresh()">Enviar</button>
+                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -164,7 +238,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Secretaria</a>, Todos os direitos resrvados
+                        &copy; <a href="#">Secretaria</a>, Todos os direitos reservados
                     </div>
                 </div>
             </div>
@@ -181,49 +255,5 @@
 
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
-
-    <!-- Upload Area -->
-    <!-- <script type="text/javascript">
-        jQuery(document).ready(function($){
-            $('.upload-area').on('dragover', function(event){
-                event.preventDefault();
-                event.stopPropagation();
-            })
-            $('.upload-area').on('drop', function(event){
-                event.preventDefault();
-                event.stopPropagation();
-                console.log(event)
-                let data = new FormData();
-                let files = event.originalEvent.dataTranfer.files;
-                for(var i =0; i<files.length; i++){
-                    data.append('file[]',files[i])
-                    $.ajax({
-                        url:'upload.php',
-                        method: 'POST',
-                        data: data,
-                        contentType: false,
-                        cache: false,
-                        precessData:false,
-                        sucess:function(result){
-                            $('#uploaded-files').html(result);
-
-                        }
-                    })
-                }
-            })
-        });
-    </script> -->
-   <script>
-       function refresh(){
-           location.reload(true)
-       }
-
-       let files = event.originalEvent.dataTranfer.files;
-
-       $('.file-upload').file_upload();
-       function ColocaArquivo(){
-        
-       }
-   </script>
 </body>
 </html>

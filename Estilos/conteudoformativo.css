@@ -1,0 +1,61 @@
+.corpo-curso-area{
+    margin-top: 2%;
+    margin-left: 13%;
+}
+
+.titulo h2{
+    text-align: center;
+    margin-left: -16%;
+}
+
+/* [!] Definições de estilo para .table-curso-area e seus elementos */
+
+.menu-div option, select{
+    font-size: 15px;
+}
+
+.table-curso-area{
+    box-shadow: 4px 4px;
+    border: 1px;
+    border-style: solid;
+    border-width: auto;
+    border-color: auto;
+    background-color: white;
+}
+
+.table-curso-area p{
+    margin: -1.5%;
+    padding: 2%;
+}
+
+.table-curso-area td{
+    margin: 20px;
+    padding: 8px;
+    text-align: left
+}
+
+.table-curso-area input{
+    width: 370px;
+}
+
+/* [/!] Definições de estilo para .table-curso-area e seus elementos */
+
+.botao-confirmar{
+    margin-top: 2%;
+    margin-left: 38%;
+}
+
+.conf-btn{
+    border: none;
+    background-color: rgb(3, 196, 3);
+    height: 35px;
+}
+
+.conf-btn a{
+    color: ivory;
+}
+
+.conf-btn:hover, .conf-btn a:hover{
+    color: ivory;
+    background-color: rgb(170, 255, 172);
+}
