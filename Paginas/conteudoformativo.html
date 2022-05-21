@@ -107,8 +107,7 @@
                     <td>
                         <div class="menu-div">
                         <p>Turma</p>
-                            <select id="turmas">
-                                <option>Insira uma turma</option>
+                            <select id="turmas" placeholder="Insira uma Turma">
                                 <option>Turma 1</option>
                                 <option>Turma 2</option>
                                 <option>Turma 3</option>
@@ -121,8 +120,7 @@
                     <td>
                         <div class="menu-div">
                         <p>Curso</p>
-                            <select id="cursos">
-                                <option>Insira um curso</option>
+                            <select id="cursos" placeholder="Insira um Curso">
                                 <option>Análise e Desenvolvimento de Sistemas</option>
                                 <option>Mecatrônica</option>
                                 <option>Soldagem</option>
@@ -149,15 +147,14 @@
                 <tr>
                     <td>
                         <p>Data</p>
-                        <input class="campo-area" type="date">
+                        <input class="campo-area" type="date" id="data">
                     </td>
 
                     <td>
 
                         <div class="menu-div">
                             <p>Período</p>
-                            <select id="periodo">
-                                <option>Insira um período</option>
+                            <select id="periodo" placeholder="Insira um Período">
                                 <option>Manhã</option>
                                 <option>Tarde</option>
                                 <option>Noite</option>
@@ -167,26 +164,30 @@
                     </td>
 
                     <td>
-
                         <div class="menu-div">
                             <p>Conteúdo Formativo</p>
-                            <select id="conteudoform">
-                                <option>Insira uma opção</option>
+                            <select id="conteudoform" placeholder="Insira um Conteúdo">
                                 <option>Conteúdo Formativo 1</option>
                                 <option>Conteúdo Formativo 2</option>
                                 <option>Conteúdo Formativo 3</option>
                                 <option>Conteúdo Formativo 4</option>
                             </select>
                         </div>
-
                     </td>
                 </tr>
 
             </table>
 
             <div class="botao-confirmar">
-                <button class="conf-btn"><a href="index.html">Enviar</a></button>
+                <button class="conf-btn"><a onclick="adicionar()">Enviar</a></button>
             </div>
+
+            <table id="conteudo" class="format">
+                <h1 id="hide" class="hide">Tabela dos Conteúdos Criados</h1>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
 
         </div>
 
@@ -248,12 +249,20 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
     
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    
+    
+    
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
+
+    <!-- Script Conteúdo Formativo -->
+    <script src="../Scripts/conteudoformativo.js"></script>
+
+    
 </body>
 </html>

@@ -1,11 +1,26 @@
 .corpo-curso-area{
     margin-top: 2%;
-    margin-left: 13%;
+   /*  margin-left: 13%; */
 }
 
 .titulo h2{
     text-align: center;
-    margin-left: -16%;
+   /*  margin-left: -16%; */
+}
+
+input,select{
+    height: 40px !important;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    margin-top: 10px !important;
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 /* [!] Definições de estilo para .table-curso-area e seus elementos */
@@ -15,6 +30,7 @@
 }
 
 .table-curso-area{
+    margin: auto;
     box-shadow: 4px 4px;
     border: 1px;
     border-style: solid;
@@ -36,13 +52,16 @@
 
 .table-curso-area input{
     width: 370px;
+    height: 40px;
 }
 
 /* [/!] Definições de estilo para .table-curso-area e seus elementos */
 
 .botao-confirmar{
-    margin-top: 2%;
-    margin-left: 38%;
+    text-align: center;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+    /* margin-left: 38%; */
 }
 
 .conf-btn{
@@ -58,4 +77,25 @@
 .conf-btn:hover, .conf-btn a:hover{
     color: ivory;
     background-color: rgb(170, 255, 172);
+}
+
+table.format{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 20px !important;
+}
+
+table.format>tbody>tr{
+    margin: auto;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    width: 400px;
+    margin: 10px;
+}
+table.format>tbody>tr>td{
+    margin: auto;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+    width: 400px;
 }
