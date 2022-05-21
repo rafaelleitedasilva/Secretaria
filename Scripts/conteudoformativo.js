@@ -1,6 +1,3 @@
-
-
-
 function adicionar(){
 
     /* Pegando o valor dos Inputs */
@@ -24,7 +21,7 @@ function adicionar(){
     tdTurmas.innerHTML = String(Turmas.value);
 
     let tdCurso = document.createElement('td')
-    tdCurso.innerText = String(Cursos.value);
+    tdCurso.innerText = String(Cursos.value);s
 
     let tdCurriculares = document.createElement('td')
     tdCurriculares.innerHTML = String(Unicurriculares.value);
