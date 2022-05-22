@@ -1,5 +1,7 @@
-var div = document.getElementById('form')
-let sala01 = document.getElementById("sala1")
+var div = document.getElementById('form');
+let sala01 = document.getElementById("sala1");
+let check1 = [''];
+let check2 = [''];
 
 function confirmaSala1(){
         let professor = document.getElementById("professor1")
@@ -72,23 +74,18 @@ function confirmaSala1(){
             tr.appendChild(tdFour)
             tr.appendChild(tdOne)
 }
-let check2 = [''];
+
 
 function confirmaSala2(){
+        let professor = document.getElementById("professor2")
+        let data = document.getElementById("data2")
+        let hora = document.getElementById("hora2")
+        let datahora = `${data.value}${hora.value}`
 
-    let professor = document.getElementById("professor2")
-    let data = document.getElementById("data2")
-    let hora = document.getElementById("hora2")
-    let datahora = `${data.value}${hora.value}`
-    
-    
-    
-    
-
-    let tr = document.createElement('tr')
-    let cancela = document.createElement('button')
-    cancela.className = "btn-danger"
-    let tbody = document.getElementById("tbody2");  
+        let tr = document.createElement('tr')
+        let cancela = document.createElement('button')
+        cancela.className = "btn-danger"
+        let tbody = document.getElementById("tbody2");  
         let tdOne = document.createElement('td')
         tdOne.appendChild(cancela)
         let tdTwo = document.createElement('td')
@@ -116,12 +113,18 @@ function confirmaSala2(){
                 tr.appendChild(tdFour)
                 tr.appendChild(tdOne)
         }
-        
+
         cancela.innerText = "X"
         cancela.onclick = function(){
             let linha = cancela.closest("tr");
-            console.log(linha.children.value)
-            cancela.closest("tr").remove();
+            for (let i = 0; i < check2.length; i++){
+                if(check2[i] == `${linha.childNodes[1].textContent}${linha.childNodes[2].textContent}`){
+                    check2.splice(i,1)
+                    cancela.closest("tr").remove();
+                    console.log(check2)
+                }
+            }
+            
         }
 
                 
