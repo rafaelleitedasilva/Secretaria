@@ -46,7 +46,7 @@ div.livre{
 
 }
 
-p{
+p.sala{
     text-align: center;
     margin-top: 20%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
@@ -87,8 +87,7 @@ div.livre{
 }
 
 div.livre:hover{
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+    background-image: radial-gradient(rgba(2, 66, 139, 0.696), rgb(44, 3, 111));
 }
 
 /* ESTILO DO MODAL */
