@@ -1,4 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px auto;
+}
+
+
 h1.main{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+h6{
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    padding: 10px;
+}
+
+input#professor{
+    margin: auto;
+    text-align: center;
+    width: 140px;
+}
+
+#sala1,#sala2,#sala3,#sala4{
+    margin: auto;
+    display: inline-block;
+    width: 220px;
+    height: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.756);
+}
+
+div.livre{
+    background-image: radial-gradient(rgba(1, 158, 19, 0.696), green);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    font-size: 20PX;
+    margin-top: 50px !important;
+    margin: auto;
+    text-align:center;
+    background-color: white;
+
+}
+
+p{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 28px;
+    color: white;
+}
+
+#sala1,#sala2{
+    margin-bottom: 40px;
+    
+}
+.salas{
+    padding-top: 20px;
+    text-align: center;
+    margin: auto !important;
+}
+
+.selecionado{
+    margin: auto;
+    display: inline-block;
+    background-image: radial-gradient(rgba(1, 8, 133, 0.696), rgb(0, 19, 128));
+    width: 220px;
+    height: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.756);
+}
+
+.escolhido{
+    margin: auto;
+    display: inline-block;
+    background-image: radial-gradient(rgba(139, 20, 2, 0.696), rgb(111, 12, 3));
+    width: 220px;
+    height: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.756);
+}
+
+div.livre{
+    cursor: pointer;
+}
+
+div.livre:hover{
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+/* ESTILO DO MODAL */
+.container-sala1{
+    display: none;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.189);
+    width: 100vw;
+    height: 100vw;
+    z-index: 2000;;
+    justify-content: center;
+}
+
+.modal-sala1{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border: 10px solid rgb(130, 7, 7);
+    box-shadow: 0px 0px 0px 10px white;
+}
+
+@media screen and (min-width:1000px){
+    .modal-sala1{
+        position: relative;
+        margin-top: 100px;
+        text-align: center;
+        background-color: white;
+        height: 30%;
+        width: 60%;
+        border: 10px solid rgb(130, 7, 7);
+        box-shadow: 0px 0px 0px 10px white;
+    }
+}
+
+div.registros{
+    height: 80%;
+    overflow-y: scroll;
+}
+
+div.form{
+    height: 20%;
+}
+
+.btn.btn-success, input#hora, input#data, input#professor, label{
+    margin-top: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+.btn.btn-danger{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    border: 0px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    background-color: rgb(131, 19, 19);
+    border-radius: 50%;
+}
+
+table#registros>tr>td{
+border: 1px solid black !important;
 }

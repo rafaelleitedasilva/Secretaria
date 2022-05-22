@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Ambiente</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
     
@@ -92,8 +92,20 @@
     </nav>
     <!-- Navbar End -->
     <main>
-        <h1 class="main">Registro de Ambiente:</h1>
-        
+        <h1 class="main">Registro de Ambiente</h1>
+        <h6> Selecione a sala que você quer reservar</h2>
+        <div class="salas">
+
+
+
+            <div id="sala1" onclick="entraSala1()" class="livre"><P ><p id="lab1">LAB01</P></div>
+            <div id="sala2" onclick="sala2()" class="livre"><P id="lab2"><strong>LAB02</strong></P></div>
+            <br>
+            <div id="sala3" onclick="sala3()" class="livre"><P id="lab3"><strong>LAB03</strong></P></div>
+            <div id="sala4" onclick="sala4()" class="livre"><P id="lab4"><strong>LAB04</strong></P></div>
+        </div>
+
+            
 
     </main>
     <!-- Footer Start -->
@@ -150,6 +162,43 @@
     </div>
     <!-- Footer End -->
 
+    <!-- MODALS -->
+    <div class="container-sala1" id="container-sala1">
+        <div class="modal-sala1">
+            <div class="registros">
+                <h1></h1>
+                    <table class="table" id="registros">
+                        <thead>
+                          <tr>
+                            <th scope="col">Professor</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbody">
+                          <tr>
+    
+                          </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="form">
+                <label>Professor:</label>
+                <input type="text" id="professor">
+                
+                <label>Data:</label>
+                <input type="date" id="data">
+                <br>
+                <label>Horário:</label>
+                <input type="time" id="hora">
+                
+                <input type="submit" class="btn btn-success" onclick="confirmaSala1()" value="Confirmar">
+            </div>
+            <button class="btn btn-danger" onclick="sair()"> X </button>  
+        </div>
+    </div>
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     
@@ -159,5 +208,20 @@
 
     <!-- Template Javascript -->
     <script src="../Scripts/main.js"></script>
+
+    <!-- Script Ambiente -->
+    <script src="../Scripts/ambiente.js"></script>
+
+    <script>
+        function sair(){
+            let container = document.getElementById("container-sala1")
+            container.style="display:none;"
+        }
+
+        function entraSala1(){
+            let container = document.getElementById("container-sala1")
+            container.style="display:flex;"
+        }
+    </script>
 </body>
 </html>
