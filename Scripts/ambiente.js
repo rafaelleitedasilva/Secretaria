@@ -79,7 +79,7 @@ function confirmaSala2(){
     let professor = document.getElementById("professor2")
     let data = document.getElementById("data2")
     let hora = document.getElementById("hora2")
-    let datahora = `${data.value} ${hora.value}`
+    let datahora = `${data.value}${hora.value}`
     
     
     
@@ -88,49 +88,44 @@ function confirmaSala2(){
     let tr = document.createElement('tr')
     let cancela = document.createElement('button')
     cancela.className = "btn-danger"
-    let tbody = document.getElementById("tbody2");
-        
+    let tbody = document.getElementById("tbody2");  
         let tdOne = document.createElement('td')
         tdOne.appendChild(cancela)
-
         let tdTwo = document.createElement('td')
         tdTwo.innerHTML = String(professor.value);
-
         let tdThree = document.createElement('td')
         let tdFour = document.createElement('td')
 
         let y = 1;
+
         for(let i = 0; i<check2.length; i++){
-            if(check2[i] == `${data.value} ${hora.value}`){
+            if(check2[i] == `${data.value}${hora.value}`){
                 window.alert("Essa data e hora já foram escolhidas por outro professor!");
-                y = i;
-                this.break;
-            }else{
-                y = y + 1;
-                tdThree.innerHTML = String(data.value);
-                tdFour.innerHTML = String(hora.value);
-                this.break;
+                y = 0;
             }
         }
 
-        if(check2[y] == `${data.value} ${hora.value}`){
-            
-        }else{
-            check2.push(`${data.value} ${hora.value}`);
-            console.log(check2)
+        if(y == 1){
+                tdThree.innerHTML = String(data.value);
+                tdFour.innerHTML = String(hora.value);
+                check2.push(`${data.value}${hora.value}`);
+                console.log(check2)
+                tbody.appendChild(tr)
+                tr.appendChild(tdTwo)
+                tr.appendChild(tdThree)
+                tr.appendChild(tdFour)
+                tr.appendChild(tdOne)
         }
         
-
         cancela.innerText = "X"
         cancela.onclick = function(){
+            let linha = cancela.closest("tr");
+            console.log(linha.children.value)
             cancela.closest("tr").remove();
         }
+
+                
     
-        tbody.appendChild(tr)
-        tr.appendChild(tdTwo)
-        tr.appendChild(tdThree)
-        tr.appendChild(tdFour)
-        tr.appendChild(tdOne)
 }
 
 
