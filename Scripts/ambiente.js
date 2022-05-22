@@ -72,17 +72,19 @@ function confirmaSala1(){
             tr.appendChild(tdFour)
             tr.appendChild(tdOne)
 }
+let check2 = [''];
 
 function confirmaSala2(){
-    let x = 0;
-
-
-    
-
 
     let professor = document.getElementById("professor2")
     let data = document.getElementById("data2")
     let hora = document.getElementById("hora2")
+    let datahora = `${data.value} ${hora.value}`
+    
+    
+    
+    
+
     let tr = document.createElement('tr')
     let cancela = document.createElement('button')
     cancela.className = "btn-danger"
@@ -95,10 +97,29 @@ function confirmaSala2(){
         tdTwo.innerHTML = String(professor.value);
 
         let tdThree = document.createElement('td')
-        tdThree.innerText = String(data.value);
-
         let tdFour = document.createElement('td')
-        tdFour.innerHTML = String(hora.value);
+
+        let y = 1;
+        for(let i = 0; i<check2.length; i++){
+            if(check2[i] == `${data.value} ${hora.value}`){
+                window.alert("Essa data e hora já foram escolhidas por outro professor!");
+                y = i;
+                this.break;
+            }else{
+                y = y + 1;
+                tdThree.innerHTML = String(data.value);
+                tdFour.innerHTML = String(hora.value);
+                this.break;
+            }
+        }
+
+        if(check2[y] == `${data.value} ${hora.value}`){
+            
+        }else{
+            check2.push(`${data.value} ${hora.value}`);
+            console.log(check2)
+        }
+        
 
         cancela.innerText = "X"
         cancela.onclick = function(){
@@ -110,8 +131,8 @@ function confirmaSala2(){
         tr.appendChild(tdThree)
         tr.appendChild(tdFour)
         tr.appendChild(tdOne)
-        x++
 }
+
 
 /*     function excluirTudo(){
         let table = document.getElementById('registros')
