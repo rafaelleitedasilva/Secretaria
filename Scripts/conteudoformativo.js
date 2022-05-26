@@ -7,7 +7,7 @@ function adicionar(){
     let Data = document.getElementById('data')
     let Periodo = document.getElementById('periodo')
     let ConteudoFormativo = document.getElementById('conteudoform')
-    let table = document.getElementById('conteudo')
+    /* let table = document.getElementById('conteudo') */
     let tbody = document.getElementById('tbody')
     let h1 = document.getElementById('hide')
 
@@ -21,7 +21,7 @@ function adicionar(){
     tdTurmas.innerHTML = String(Turmas.value);
 
     let tdCurso = document.createElement('td')
-    tdCurso.innerText = String(Cursos.value);s
+    tdCurso.innerText = String(Cursos.value);
 
     let tdCurriculares = document.createElement('td')
     tdCurriculares.innerHTML = String(Unicurriculares.value);
@@ -35,7 +35,7 @@ function adicionar(){
     let tdFormativo = document.createElement('td')
     tdFormativo.innerHTML = String(ConteudoFormativo.value);
 
-    table.appendChild(tbody)
+    /* table.appendChild(tbody) */
     tbody.appendChild(tr)
     tr.appendChild(tdTurmas)
     tr.appendChild(tdCurso)
