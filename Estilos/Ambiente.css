@@ -162,3 +162,8 @@ border: 1px solid black !important;
     width: 35px;
     height: 35px;
 }
+
+div.container-fluid.bg-dark.text-body.footer.mt-5.pt-5.px-0.wow.fadeIn{
+    position: fixed;
+    bottom: 0 !important;
+}
