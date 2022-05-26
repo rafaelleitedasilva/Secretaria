@@ -12,6 +12,6 @@ function validar(){
         link.href = "index.html"
     } else{
         link.href = "#"
-        window.alert("Senha Incorreta!")
+        window.alert("Email ou Senha Incorreta!")
     }
 }
