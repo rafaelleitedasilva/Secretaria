@@ -314,14 +314,10 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-track {
     background: rgb(0, 0, 0);        /* color of the tracking area */
   }
+
   .logo{
-      margin-bottom: -120px;
-      width: 430px;
-      margin-top: -160px;
-      margin-left: -80px;
+      display: block;
+      margin: auto;
+      width: 260px;
   }
 
-  #logo{
-      padding-top: 20px;
-      padding-left: 40px;
-  }
