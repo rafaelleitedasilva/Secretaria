@@ -30,11 +30,6 @@ div.livre{
     background-image: radial-gradient(rgba(1, 158, 19, 0.696), green);
 }
 
-.hide{
-    display: none;
-}
-
-
 p.sala{
     text-align: center;
     margin-top: 20%;
