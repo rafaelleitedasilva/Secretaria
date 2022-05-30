@@ -1,12 +1,9 @@
-
-
-
 h1.main{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
-h6{
+main>h6{
     text-align: center;
 }
 
@@ -37,14 +34,6 @@ div.livre{
     display: none;
 }
 
-.show{
-    font-size: 20PX;
-    margin-top: 50px !important;
-    margin: auto;
-    text-align:center;
-    background-color: white;
-
-}
 
 p.sala{
     text-align: center;
