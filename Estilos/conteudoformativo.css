@@ -26,11 +26,7 @@ input,select{
 
 .table-curso-area{
     margin: auto;
-    box-shadow: 4px 4px;
-    border: 1px;
-    border-style: solid;
-    border-width: auto;
-    border-color: auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.47);
     background-color: white;
 }
 
@@ -84,13 +80,11 @@ table.format{
 table.format>tbody>tr{
     margin: auto;
     display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.63);
     width: 400px;
     margin: 10px;
 }
 table.format>tbody>tr>td{
     margin: auto;
     display: inline-block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
     width: 400px;
 }
