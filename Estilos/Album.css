@@ -47,9 +47,7 @@ H1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-p{
-    text-align: center;
-}
+
 .container{
     width: 100%;
     margin-top: 10px;
@@ -57,7 +55,6 @@ p{
 
 .row, .rowUpload{
     margin: 0 auto;
-    text-align: center;
 }
 
 #carouselExampleSlidesOnly{
@@ -98,7 +95,7 @@ img.d-block.w-100{
     text-align: center !important;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   }
-@media screen and (min-width:1090px){
+@media screen and (min-width:1490px){
     .drag-area{
       width: 600px;
       margin: 0 auto;
