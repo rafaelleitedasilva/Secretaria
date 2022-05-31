@@ -16,12 +16,7 @@ input,select{
     display: none;
 }
 
-.show{
-    margin-top: 10px !important;
-    display: block;
-    margin: auto;
-    text-align: center;
-}
+
 
 /* [!] Definições de estilo para .table-curso-area e seus elementos */
 
