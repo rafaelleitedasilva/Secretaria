@@ -10,8 +10,6 @@ div.aluno{
 }
 
 form{
-    border: 1px solid black;
-    border-radius: 5px;
     padding: 20px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.362);
     margin-top: 20px;
