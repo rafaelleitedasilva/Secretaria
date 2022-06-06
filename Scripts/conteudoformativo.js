@@ -9,9 +9,6 @@ function adicionar(){
     let ConteudoFormativo = document.getElementById('conteudoform')
     /* let table = document.getElementById('conteudo') */
     let tbody = document.getElementById('tbody')
-    let h1 = document.getElementById('hide')
-
-    h1.className = 'show'
 
     /* Criando os Elementos que serão adicionados na página */
     let tr = document.createElement('tr')
